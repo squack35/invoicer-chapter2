@@ -13,6 +13,8 @@ jobs:
    - run: 
       name: Setup environment
       command: |
+       CIRCLE_PROJECT_USERNAME = squack35
+       CIRCLE_PROJECT_REPONAME = invoicer-chapter2
        gb="/src/github.com/${CIRCLE_PROJECT_USERNAME}";
        if [ ${CIRCLE_PROJECT_USERNAME} == 'Securing-DevOps' ]; then
          dr="securingdevops"
